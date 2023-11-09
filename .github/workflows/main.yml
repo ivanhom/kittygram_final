@@ -39,7 +39,8 @@ jobs:
         SECRET_KEY: ${{ secrets.SECRET_KEY }}
       run: |
         python -m flake8 backend/
-        pytest
+        cd backend/
+        python manage.py test
 
   build_and_push_to_docker_hub:
     name: Push Docker image to DockerHub
