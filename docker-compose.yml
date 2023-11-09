@@ -8,11 +8,13 @@ volumes:
 services:
   db:
     image: postgres:13
+    restart: unless-stopped
     env_file: .env
     volumes:
       - pg_data:/var/lib/postgresql/data/
   backend:
     build: ./backend/
+    restart: unless-stopped
     env_file: .env
     volumes:
       - static:/backend_static/
@@ -26,6 +28,7 @@ services:
       - static:/frontend_static/
   gateway:
     build: ./nginx/
+    restart: unless-stopped
     ports:
       - 9000:80
     volumes:
