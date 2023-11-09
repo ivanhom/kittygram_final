@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from cats.models import Achievement, Cat
+from .models import Achievement, Cat
 
 admin.site.empty_value_display = 'Не задано'
 

@@ -5,7 +5,7 @@ import webcolors
 from django.core.files.base import ContentFile
 from rest_framework import serializers
 
-from cats.models import Achievement, AchievementCat, Cat
+from .models import Achievement, AchievementCat, Cat
 
 
 class Hex2NameColor(serializers.Field):

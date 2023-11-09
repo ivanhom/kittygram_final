@@ -1,8 +1,8 @@
 from rest_framework import viewsets
 from rest_framework.pagination import PageNumberPagination
 
-from cats.models import Achievement, Cat
-from cats.serializers import AchievementSerializer, CatSerializer
+from .models import Achievement, Cat
+from .serializers import AchievementSerializer, CatSerializer
 
 
 class CatViewSet(viewsets.ModelViewSet):
