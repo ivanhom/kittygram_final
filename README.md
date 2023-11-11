@@ -1,3 +1,5 @@
+[![Main Kittygram workflow](https://github.com/ivanhom/kittygram_final/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/ivanhom/kittygram_final/actions/workflows/main.yml)
+
 # Kittygram
 
 ### О возможностях проекта
